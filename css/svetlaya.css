@@ -1,0 +1,25 @@
+.light-theme .slide,
+.light-theme .competition-card,
+.light-theme .review {
+    border-color: #ddd;
+}
+
+.light-theme .slide-image,
+.light-theme .card-image,
+.light-theme .author-photo,
+.light-theme .about-image {
+    background: #eee;
+}
+
+.light-theme .auth-form input,
+.light-theme .search-form input,
+.light-theme .newsletter-form input {
+    background: #fff;
+    color: #000;
+    border-color: #ddd;
+}
+
+.light-theme .btn {
+    background: #ddd;
+    color: #000;
+}

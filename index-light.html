@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья - мой космос</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/svetlaya.css">
+</head>
+<body class="light-theme">
+<header>
+    <div class="logo">Моя семья - мой космос</div>
+    <nav>
+        <a href="registration.html">Регистрация</a>
+        <a href="#auth">Авторизация</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="#about">О нас</a>
+        <a href="#competitions">Конкурсы</a>
+        <a href="#search">Поиск</a>
+        <a href="#contacts">Контакты</a>
+        <button class="theme-toggle">Тёмная тема</button>
+    </nav>
+</header>
+
+<main>
+    <section class="slider-section">
+        <h2>Популярные конкурсы</h2>
+        <div class="slider">
+            <div class="slide active">
+                <div class="slide-image">Изображение конкурса</div>
+                <div class="slide-description">Краткое описание конкурса</div>
+                <div class="slide-rating">★★★★☆</div>
+                <a href="competition.html" class="btn">Подробнее</a>
+            </div>
+            <div class="slide-controls">
+                <button class="prev">←</button>
+                <button class="next">→</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="auth" class="auth-section">
+        <h2>Авторизация</h2>
+        <form class="auth-form">
+            <input type="email" placeholder="Email" required>
+            <input type="password" placeholder="Пароль" required>
+            <button type="submit">Войти</button>
+            <a href="#" class="forgot-password">Забыли пароль?</a>
+        </form>
+    </section>
+
+    <section id="about" class="about-section">
+        <h2>О нас</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Описание компании и нашей деятельности.</p>
+            </div>
+            <div class="about-image">Изображение</div>
+        </div>
+    </section>
+
+    <section class="greeting-section">
+        <h2>Приветствие от организаторов</h2>
+        <video controls>
+            <source src="media/video/hello.mp4" type="video/mp4">
+            Ваш браузер не поддерживает видео.
+        </video>
+    </section>
+
+    <section id="competitions" class="competitions-section">
+        <h2>Конкурсы</h2>
+        <div class="competitions-grid">
+            <div class="competition-card">
+                <div class="card-image">Фото</div>
+                <h3>Семейная кулинария</h3>
+                <p>Приготовление блюд по семейным рецептам</p>
+                <div class="card-info">
+                    <span>Записалось: 15</span>
+                    <span>Рейтинг: ★★★★☆</span>
+                </div>
+                <a href="competition.html" class="btn">Записаться</a>
+            </div>
+            <div class="competition-card">
+                <div class="card-image">Фото</div>
+                <h3>Творческая мастерская</h3>
+                <p>Создание художественных работ всей семьей</p>
+                <div class="card-info">
+                    <span>Записалось: 12</span>
+                    <span>Рейтинг: ★★★★★</span>
+                </div>
+                <a href="competition.html" class="btn">Записаться</a>
+            </div>
+            <div class="competition-card">
+                <div class="card-image">Фото</div>
+                <h3>Спортивные состязания</h3>
+                <p>Семейные эстафеты и спортивные игры</p>
+                <div class="card-info">
+                    <span>Записалось: 18</span>
+                    <span>Рейтинг: ★★★☆☆</span>
+                </div>
+                <a href="competition.html" class="btn">Записаться</a>
+            </div>
+            <div class="competition-card">
+                <div class="card-image">Фото</div>
+                <h3>Музыкальный конкурс</h3>
+                <p>Выступление семейных музыкальных коллективов</p>
+                <div class="card-info">
+                    <span>Записалось: 8</span>
+                    <span>Рейтинг: ★★★★☆</span>
+                </div>
+                <a href="competition.html" class="btn">Записаться</a>
+            </div>
+            <div class="competition-card">
+                <div class="card-image">Фото</div>
+                <h3>Научные проекты</h3>
+                <p>Семейные научные эксперименты и изобретения</p>
+                <div class="card-info">
+                    <span>Записалось: 10</span>
+                    <span>Рейтинг: ★★★★☆</span>
+                </div>
+                <a href="competition.html" class="btn">Записаться</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="search" class="search-section">
+        <h2>Поиск конкурсов</h2>
+        <form class="search-form">
+            <input type="text" placeholder="Название или описание" list="suggestions">
+            <datalist id="suggestions">
+                <option value="Конкурс 1">
+                <option value="Конкурс 2">
+            </datalist>
+            <button type="submit">Поиск</button>
+        </form>
+    </section>
+
+    <section class="reviews-section">
+        <h2>Отзывы</h2>
+        <div class="reviews-slider">
+            <div class="review">
+                <div class="review-author">
+                    <div class="author-photo">Фото</div>
+                    <div class="author-name">Имя автора</div>
+                </div>
+                <div class="review-text">Текст отзыва</div>
+                <div class="review-date">01.01.2024</div>
+                <a href="competition.html" class="btn">Подробнее</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter-section">
+        <h2>Подписка на новости</h2>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Email" required>
+            <label>
+                <input type="checkbox" required>
+                Согласие на обработку данных
+            </label>
+            <button type="submit">Подписаться</button>
+        </form>
+    </section>
+</main>
+
+<footer id="contacts">
+    <div class="contacts">
+        <a href="tel:+79339336969">+7 933 933 69 69</a>
+        <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+    </div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="index-light.html">Светлая тема</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="competition.html">Конкурс</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="404.html">Страница не найдена</a>
+    </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя семья - мой космос Личный кабинет</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/account.css">
+</head>
+<body class="dark-theme">
+<header>
+    <div class="logo">Моя семья - мой космос</div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="schedule.html">Расписание</a>
+        <a href="#contacts">Контакты</a>
+        <button class="logout-btn">Выйти</button>
+        <button class="theme-toggle">Светлая тема</button>
+    </nav>
+</header>
+
+<main>
+    <h1>Личный кабинет</h1>
+
+    <div class="account-content">
+        <section class="booking-form">
+            <h2>Запись на конкурс</h2>
+            <form class="booking-form-inner">
+                <div class="form-group">
+                    <label>Конкурс *</label>
+                    <label>
+                        <select required>
+                            <option value="">Выберите конкурс</option>
+                            <option value="cooking">Семейная кулинария</option>
+                            <option value="art">Творческая мастерская</option>
+                            <option value="sports">Спортивные состязания</option>
+                            <option value="music">Музыкальный конкурс</option>
+                            <option value="science">Научные проекты</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Дата *</label>
+                    <input type="date" value="2025-09-27" readonly required>
+                </div>
+
+                <div class="form-group">
+                    <label>Время *</label>
+                    <label>
+                        <select required>
+                            <option value="">Выберите время</option>
+                            <option value="9">9:00</option>
+                            <option value="10">10:00</option>
+                            <option value="11">11:00</option>
+                            <option value="12">12:00</option>
+                            <option value="13">13:00</option>
+                            <option value="14">14:00</option>
+                            <option value="15">15:00</option>
+                            <option value="16">16:00</option>
+                            <option value="17">17:00</option>
+                            <option value="18">18:00</option>
+                            <option value="19">19:00</option>
+                            <option value="20">20:00</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>Количество человек *</label>
+                    <input type="number" min="1" max="10" value="1" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Записаться</button>
+            </form>
+        </section>
+
+        <section class="current-bookings">
+            <h2>Мои записи</h2>
+            <div class="bookings-list">
+                <div class="booking-item">
+                    <div class="booking-info">
+                        <strong>Семейная кулинария</strong>
+                        <span>27 сентября 2025, 10:00</span>
+                        <span>Участников: 9 580</span>
+                    </div>
+                    <button class="cancel-btn">Отменить</button>
+                </div>
+                <div class="booking-item">
+                    <div class="booking-info">
+                        <strong>Творческая мастерская</strong>
+                        <span>25 сентяюря 2025, 14:00</span>
+                        <span>Участников: 2</span>
+                    </div>
+                    <button class="cancel-btn">Отменить</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer id="contacts">
+    <div class="contacts">
+        <a href="tel:+79339336969">+7 933 933 69 69</a>
+        <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+    </div>
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="index-light.html">Светлая тема</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="competition.html">Конкурс</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="404.html">Страница не найдена</a>
+    </nav>
+</footer>
+</body>
+</html>
