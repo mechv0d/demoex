@@ -17,7 +17,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $_SESSION['user_id'] = $row ? $row['id'] : null;
         $_SESSION['login'] = $user->login;
         $_SESSION['admin_right'] = $row ? $row['admin_right'] : 0;
-        // Редирект на главную или admin.php
+        // редирект на главную или admin.php (зависит от крутости юзера)
         if ($_SESSION['admin_right']) {
             header('Location: admin.php');
             exit;
@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <title>Авторизация</title>
 </head>
 <body>
-    <a href="index.php">На главную</a>
+<a href="index.php">На главную</a>
 <h1>Страница авторизации</h1>
 <?php if ($message): ?>
     <p style="color:red;"><?php echo htmlspecialchars($message); ?></p>

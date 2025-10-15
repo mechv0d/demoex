@@ -5,7 +5,7 @@
     <title>Регистрация</title>
 </head>
 <body>
-    <a href="index.php" >На главную</a>
+<a href="index.php">На главную</a>
 <h1>Страница регистрации</h1>
 <?php
 session_start();
@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $message = 'Пользователь с таким логином или email уже существует.';
     } else {
         if ($user->register()) {
-            // Получаем admin_right для нового пользователя
+            // получаем admin_right и ID нового пользователя
             $query = "SELECT admin_right, id FROM user WHERE login = :login LIMIT 1";
             $stmt = $db->prepare($query);
             $stmt->bindParam(':login', $user->login);
